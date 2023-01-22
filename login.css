@@ -1,0 +1,219 @@
+body{
+    margin:0px;
+    font-family:'Times New Roman', Times, serif ;
+  }
+  body a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  .flex{
+    display: flex;
+  }
+  .container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    position: fixed; 
+    z-index: 50;
+    top: 0px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .logo {
+    width: 9%;
+    height: 100%;
+    background-image: url("https://cdniq.us1.myspdn.com/airb561o0zzfportz0k5397gy/wp-content/uploads/2014/12/limeroad-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+  }  
+  
+  .middle {
+    width: 60%;
+    height: 100%;
+    justify-content:space-evenly;
+  }
+  .middle li {
+    list-style-type: none;
+    padding: 0px 20px;
+    line-height: 22px;
+  }
+  .middle > div:hover{
+    border-bottom: 3px solid #D3145A;
+    /* background-color: #CE297E; */
+  }
+  .box5{
+    color:#D3145A;
+  }
+  
+  .li1,
+  .li2,
+  .li3,
+  .li4{
+    position: absolute;
+    display: none;
+    grid-template-columns: 300px;
+  }
+  .li1,
+  .li2,
+  .li3,
+  .li4{
+    display: none;
+    grid-template-columns: 200px 180px 200px 180px;
+    /* grid-template-rows: 450px; */
+    grid-gap: 10px;
+    position: absolute;
+    background-color: white;
+  }
+  .li1,
+  .li2,
+  .li3{
+    grid-template-rows: 450px;
+  }
+  /* .li5{
+    position: absolute;
+    display: none;
+    /* display: block; */
+  /* } */ */
+  
+  .li1>div{ 
+    position: absolute;
+    display: grid;
+    /* grid-template-columns:120px 130px 120px 130px; */
+  }
+  
+  .box1:hover .li1{
+    display: grid;
+    top: 105%;
+    left: 15%;
+    background-color: white;
+  }
+  .box2:hover .li2{
+    display: grid;
+    top: 105%;
+    left: 15%;
+    background-color: white;
+  }
+  .box3:hover .li3{
+    display: grid;
+    top: 105%;
+    left: 15%;
+    background-color: white;
+  }
+  .box4:hover .li4{
+    display: grid;
+    top: 105%;
+    left: 15%;
+    background-color: white;
+  }
+  .box5:hover{
+    display: grid;
+    top: 105%;
+    left: 15%;
+    background-color: white;
+  }
+
+  .search i,
+.profile i{
+  color:rgb(59, 52, 52);
+  padding-left: 20px;
+}
+.cart i{
+  color:rgb(59, 52, 52);
+  padding-left: 10px;
+}
+.profile:hover{
+  border-bottom: 3px solid #D3145A;
+}
+.profile:hover .li5{
+  /* top: 105%; */
+  /* left: 15%; */
+  background-color: white;
+}
+.li5 div:nth-child(1){
+  padding: 10px;
+}
+.li5 div:nth-child(1) button{
+  background-color: #D3145A;
+  border:none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 12px;
+}
+.li5 li{
+  font-size: medium;
+  color: rgb(48, 43, 43);
+}
+.li5 div:nth-child(2){
+  padding: 10px;
+  gap:3px;
+  border-top:1px solid rgb(109, 101, 101);
+}
+.li5 div:nth-child(3){
+  padding: 10px;
+  gap:3px;
+  border-top:1px solid rgb(109, 101, 101);
+}
+.li5 div:nth-child(4){
+  padding: 10px;
+  gap:3px;
+  border-top:1px solid rgb(109, 101, 101);
+}
+.li5 div:nth-child(4) button{
+  background-color: gray;
+  border:none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+}
+.li5 div:nth-child(1) button:hover{
+  cursor: pointer;
+}
+/* .li5>div{ 
+  position: absolute;
+  display: grid;
+  grid-template-columns:120px 130px 120px 130px;
+} */
+
+.full{
+    background-color: rgb(200, 208, 215);
+    padding:100px 20vw;
+    margin:auto;
+    height:100vh;
+  }
+  .first{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: white;
+    padding: 40px;
+  }
+  .second{
+    padding:20px;
+    gap:80px;
+  }
+  .third{
+    align-items: center;
+    padding-left: 40px;
+    border-bottom: 2px solid black;
+  }
+  .third img{
+    width:40px;
+    height:40px;
+    padding: 40px;
+
+  }
+  .third h2{
+    font-size: 20px;
+  }
+  .first p{
+    font-size: larger;
+  }
+
+

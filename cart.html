@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <style>
+    .container {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid gray;
+        position: fixed; 
+        z-index: 50;
+        top: 0px;
+        background-color: white;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .logo {
+        width: 9%;
+        height: 100%;
+        background-image: url("https://cdniq.us1.myspdn.com/airb561o0zzfportz0k5397gy/wp-content/uploads/2014/12/limeroad-logo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }  
+    .full{
+        padding:80px 10vw;
+        margin:auto;
+        background-color: rgb(200, 208, 215);
+    }
+     .sec1{
+        height:200vh;
+    }
+    .full>div:nth-child(1){
+        text-align: center;
+    }
+    p{
+        font-size:larger;
+    }
+    button{
+        font-size:25px;
+        font-weight:bold;
+        color: white;
+        padding:10px 100px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(143, 218, 31);
+    }
+    .section2{
+        width:90%;
+        /* padding: 10px 5vw; */
+        margin:auto;
+    }
+
+
+    .sec-2{
+    width: 100%;
+    height: 400px;
+    padding: 25px;
+    /* padding-top: ;
+    padding-bottom: 25px; */
+}
+.slide-sec h3{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.slide-sec{
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 10px 20px;
+    overflow-x:hidden;
+    background-color: white;
+    position: relative;
+}
+.product-slide{
+    display: flex;
+    margin-top: 5px;
+    overflow-x:scroll ;
+    scroll-behavior: smooth;
+}
+.product-slide::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+    cursor: pointer;
+}
+.product-slide::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-slide li{
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.l-btn,
+.r-btn{
+    background-color: rgb(255, 255 ,255,1);
+    height:90px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    top: 35%;
+    position: absolute;
+    border: 3px solid transparent;
+}
+.l-btn{
+    border-radius: 0 5px 5px 0;
+    left: 20px;
+}
+.r-btn{
+    border-radius: 5px 0 0 5px;
+    right: 20px;
+}
+.l-btn:hover{
+    border: 3px solid rgb(2,150,150);
+}
+.r-btn:hover{
+    border: 3px solid rgb(2,150,150);
+}
+.r-btn i,
+.l-btn i{
+    color: rgb(54,54,54);
+    position: absolute;
+    font-size: 30px;
+    top: 35%;
+    left: 13%;
+    right: 13%;
+}
+/* .sec-2 li{
+    display:flex;
+} */
+.sec-2 img{
+    width:400px;
+    height:400px;
+}
+.sec-2 h3{
+    font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+    </div>
+    <section class="full sec1">
+        <div>
+            <p>no item in cart</p>
+            <a href="index.html"><button>CONTINUE</button></a>
+        </div>
+        <section class="sec-2">
+            <h3>Lowest Price Guaranteed</h3>
+            <div class="slide-sec">
+                <div class="l-btn"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="r-btn"><i class="fa-solid fa-chevron-right"></i></div>
+                <ul class="product-slide">
+                    <li><img src="https://img3.junaroad.com/uiproducts/18824359/zoom_0-1671252192.jpg" alt=""></li>
+
+                    <li><img src="https://img3.junaroad.com/uiproducts/18870114/zoom_0-1671252192.jpg" alt=""></li>
+
+                    <li><img src="https://img3.junaroad.com/uiproducts/18902839/zoom_0-1671442781.jpg" alt=""></li>
+
+                    <li><img src="https://img3.junaroad.com/uiproducts/18958754/zoom_0-1671889600.jpg" alt=""></li>
+
+                     
+                    <li><img src="https://img3.junaroad.com/uiproducts/18801593/zoom_0-1671447475.jpg" alt=""></li>
+
+                    <li><img src="https://img3.junaroad.com/uiproducts/18964107/zoom_0-1672062566.jpg" alt=""></li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+    </section>
+</body>
+<script>
+    const leftbtn =document.querySelector(".l-btn");
+    const rightbtn =document.querySelector(".r-btn");
+
+    rightbtn.addEventListener("click", function(event){
+        console.log('done');
+        const content=document.querySelector('.product-slide');
+        content.scrollLeft +=1100;
+        event.preventDefault();
+    })
+    leftbtn.addEventListener("click", function(event){
+        console.log('done');
+        const content=document.querySelector('.product-slide');
+        content.scrollLeft -=1100;
+        event.preventDefault();
+    })
+
+</script>
+</html>
+    
+
+
